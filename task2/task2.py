@@ -5,11 +5,7 @@ def get_cats_info(path):
         while True:
             line = file.readline()
             if line:
-                line_parts = line.split(",")
-                id = line_parts[0]
-                name = line_parts[1]
-                age = line_parts[2]
-                age = age.strip()
+                id, name, age = line.strip().split(",")
                 cat = {}
                 cat["id"] = id
                 cat["name"] = name

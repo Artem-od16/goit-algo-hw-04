@@ -13,7 +13,7 @@ def total_salary(path):
             else:
                 break
 
-    average_salary = int(total_salaries / amount_of_workers)
+    average_salary = total_salaries // amount_of_workers
     result = [total_salaries, average_salary]
     return set(result)
 
